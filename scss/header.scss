@@ -1,0 +1,240 @@
+.header {
+    margin: 0;
+    height: 1024px;
+    background-image: url("../img/photo_slider.jpg");
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.logo,
+.main-navigation {
+    padding-top: 40px;
+    height: 56px;
+    z-index: 1;
+}
+
+.logo {
+    flex-basis: 30%;
+    display: flex;
+    justify-content: flex-end;
+    float: left;
+}
+
+.logo svg {
+    width: 64px;
+    height: 56px;
+}
+
+.logo-text {
+    font-size: 34px;
+    line-height: 1.2;
+    letter-spacing: -0.04em;
+    color: #ffffff;
+    margin-top: 11px;
+}
+
+.logo:hover .logo-text,
+.main-menu-list-item a:hover {
+    color: #c7b299;
+}
+
+.logo:hover svg {
+    stroke: #c7b299;
+}
+
+.logo:active .logo-text,
+.main-menu-list-item a:active {
+    color: bisque;
+}
+
+.logo:active svg {
+    stroke: bisque;
+}
+
+.main-navigation {
+    flex-basis: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-menu-list {
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-menu-list-item {
+    margin: 0 14.5px;
+    font-size: 14px;
+}
+
+.main-menu-cart-form {}
+
+.main-menu-cart-button {
+    margin-left: 3.3%;
+    align-self: center;
+    background: url("../img/icon-cart.svg") no-repeat;
+    background-position: center;
+    flex-basis: 25px;
+    height: 27px;
+    border: none;
+}
+
+.main-menu-cart-button:hover {
+    background: url("../img/icon-cart-c7b299.svg") no-repeat;
+    background-position: center;
+}
+
+.main-menu-cart-button:active {
+    outline: 2px solid bisque;
+}
+
+.main-menu-search {
+    margin-left: 3%;
+    flex-basis: 200px;
+    align-self: center;
+}
+
+.main-menu-search-input {
+    width: 30px;
+    background: url("../img/icon-search.svg") no-repeat;
+    background-color: transparent;
+    background-size: contain;
+    border: none;
+    outline: none;
+    height: 27px;
+    transition: background-position ease-out 2s, background-color ease-out 2s, width ease-out 2s;
+}
+
+//.main-menu-search:hover .main-menu-search-input {
+//background: url("../img/icon-search-bisque.svg") no-repeat;
+//}
+
+.main-menu-search-input:hover {
+    background: url("../img/icon-search-bisque.svg") no-repeat;
+    background-size: contain;
+}
+
+.main-menu-search-input:focus {
+    width: 200px;
+    background-size: contain;
+    background: url("../img/icon-search-bisque.svg") no-repeat;
+    outline: 1px solid bisque;
+    background-color: grey;
+    background-position: right;
+    color: white;
+}
+
+.slider {
+    flex-basis: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slider-text-box {
+    flex-basis: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+}
+
+.slider-text-box-title-1 {
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.slider-text-box-title-2 {
+    font-size: 52px;
+    line-height: 1.2;
+}
+
+.slider-text-box-text {
+    text-align: center;
+    flex-basis: 95%;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+}
+
+.slider-text-box-link {
+    padding: 0 5px;
+    flex-basis: 170px;
+    background-color: #998675;
+    border-radius: 5px;
+    text-align: center;
+    border: 3px solid #998675;
+    box-sizing: border-box;
+}
+
+.slider-text-box-link:hover,
+.first-aside-link:hover {
+    border: 3px solid bisque;
+}
+
+.slider-text-box-link:active,
+.first-aside-link:active {
+    border: 3px solid bisque;
+    background-color: bisque;
+    color: grey;
+}
+
+.slider-text-box-link-text {
+    font-size: 14px;
+    line-height: 47px;
+    text-transform: uppercase;
+}
+
+.slider-arrow-left,
+.slider-arrow-right {
+    flex-basis: 42px;
+    height: 75px;
+}
+
+.slider-arrow-left > svg,
+.slider-arrow-right > svg {
+    fill: white;
+}
+
+.slider-arrow-right:hover,
+.slider-arrow-left:hover {
+    stroke: white;
+}
+
+.slider-arrow-right:active,
+.slider-arrow-left:active {
+    stroke: none;
+    fill: none;
+
+}
+
+.slider-nav-radio-buttons-box {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 42px;
+}
+
+.slider-nav-radio-button {
+    margin: 0 5px;
+    flex-basis: 11px;
+    height: 11px;
+    opacity: 0.5;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.slider-nav-radio-button:nth-child(3) {
+    border-color: white;
+    background-color: black;
+    box-shadow: 0 0 0 2px white;
+}

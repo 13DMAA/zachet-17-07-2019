@@ -1,0 +1,62 @@
+.about-waxom {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex-basis: 260px;
+    margin: 0 20px;
+}
+
+.about-waxom .logo {
+    padding-top: 0;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: flex-start;
+    float: none;
+}
+
+.about-waxom-text {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #555555;
+}
+
+.about-waxom-link {
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #d1d1d1;
+    position: relative;
+    border-radius:4px 0 0 4px;
+}
+
+.about-waxom-link:after {
+    content: "";
+    background: url(../img/rp-icon-arrow.svg) no-repeat center;
+    width: 8px;
+    height: 100%;
+    padding: 0 5px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    border-radius: 0 4px 4px 0;
+}
+
+.about-waxom-link:hover {
+    background-color: grey;
+    color:bisque;
+}
+
+.about-waxom-link:hover:after {
+    background: url(../img/rp-icon-arrow-bisque.svg) no-repeat center, grey;
+}
+
+.about-waxom-link:active {
+    background-color: bisque;
+    color:grey;
+}
+
+.about-waxom-link:active:after {
+    background: url(../img/rp-icon-arrow-grey.svg) no-repeat center, bisque;
+}

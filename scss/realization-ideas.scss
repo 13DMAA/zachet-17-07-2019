@@ -1,0 +1,63 @@
+.realization-ideas {
+    height: 700px;
+    margin-top: 80px;
+    margin-bottom: 0;
+    padding-top: 80px;
+    text-align: center;
+    background-color: #fbfaf8; //#fbfaf8
+    position: relative;
+}
+
+.realization-ideas-title {
+    text-align: center;
+    flex-basis: 100%;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #555555;
+}
+
+.realization-ideas-text {
+    margin: 24px auto;
+    width: 757px;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.realization-ideas-img:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 18%;
+}
+
+.realization-ideas-img:nth-child(3):hover {
+    z-index: 1;
+    height: 482px;
+}
+
+.realization-ideas-img:nth-child(4) {
+    position: absolute;
+    bottom: 0;
+    right: 18%;
+}
+
+.realization-ideas-img:nth-child(4):hover {
+    z-index: 1;
+    height: 482px;
+}
+
+.realization-ideas-img:nth-child(5) {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 1px);
+}
+
+.realization-ideas-img:nth-child(3):hover ~ .realization-ideas-img:nth-child(5) {
+    height: 440px;
+    left: 56%;
+}
+
+.realization-ideas-img:nth-child(4):hover ~ .realization-ideas-img:nth-child(5) {
+    height: 440px;
+    left: 44%;
+}

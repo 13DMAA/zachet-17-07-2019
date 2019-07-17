@@ -1,0 +1,83 @@
+.services {
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-box {
+    flex-basis: 20%;
+    position: relative;
+    min-height: 245px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.services-box:hover .services-box-svg {
+    fill: #c7b299;
+}
+
+.services-box:hover .services-box-title {
+    color: #c7b299;
+}
+
+.services-box:before {
+    content: '';
+    position: absolute;
+    left: 35%;
+    bottom: 0;
+    height: 3px;
+    width: 30%;
+    border-bottom: 3px solid #f1eee9;
+}
+
+.services-box:hover:before {
+    border-color: #c7b299;
+}
+
+.services-box a {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.services-box a:active.service-box:before {
+    border-color: bisque;
+}
+
+//КАК ПРАВИЛЬНО ОБРАТИТЬСЯ ЗДЕСЬ К ПСЕВДОЭЛЕМЕНТУ????
+
+.services-box a:active .services-box-svg {
+    fill: bisque;
+}
+
+.services-box a:active .services-box-title {
+    color: bisque;
+}
+
+.services-box svg {
+    width: 44px;
+    height: 44px;
+    fill: #555555;
+}
+
+.services-box-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 22px;
+    color: #555555;
+}
+
+.services-box-text {
+    flex-basis: 266px;
+    text-align: center;
+    margin: 0;
+    margin-top: -30px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #8c8c8c;
+}

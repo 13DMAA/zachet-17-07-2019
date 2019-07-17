@@ -1,0 +1,96 @@
+@import "variables.scss";
+
+body,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    width: $width;
+    margin: 0 auto;
+}
+
+.arrow-up {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #555555;
+    border-radius: 50%;
+    background: url(../img/arrow-up-new.png) no-repeat center, bisque;
+    background-size: 20px;
+    z-index: 600;
+    bottom: 15px;
+    right: 15px;
+}
+
+.menu-checkbox {
+        opacity: 0;
+}
+
+.menu-checkbox,
+.menu-checkbox-line-1,
+.menu-checkbox-line-2,
+.menu-checkbox-line-3 {
+    display: none;
+}
+
+section {
+    margin: 40px 0;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a,
+a:active,
+a:hover {
+    outline: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+span {
+    display: block;
+}
+
+a:first-letter,
+p:not(.our-twitter-text):first-letter,
+span:not(.our-twitter-text-link-1):not(.our-twitter-text-link-2):first-letter,
+li:first-letter {
+    text-transform: uppercase;
+}
+
+@import "fonts.scss";
+@import "header.scss";
+@import "services.scss";
+@import "realization-ideas.scss";
+@import "text-boxes.scss";
+@import "latest-projects.scss";
+@import "video-presentation.scss";
+@import "mobile-devices.scss";
+@import "counters.scss";
+@import "recent-posts.scss";
+@import "partners.scss";
+
+.footer-first {
+    margin: 0;
+    padding: 80px 0;
+    min-height: 348px;
+    background-color: #191919;
+    display: flex;
+    justify-content: center;
+}
+
+@import "about-waxom.scss";
+@import "footer-recent-posts.scss";
+@import "our-twitter.scss";
+@import "dribbble-widget.scss";
+@import "copyright.scss";
+@import "media-width-max-480px";

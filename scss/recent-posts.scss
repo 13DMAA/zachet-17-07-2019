@@ -1,0 +1,184 @@
+.recent-posts {
+    margin-top: 65px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.recent-posts-title {
+    flex-basis: 100%;
+    padding: 15px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    color: #555555;
+}
+
+.recent-posts-text {
+    flex-basis: 40%;
+    padding: 15px;
+    margin: 0 30%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 28px;
+    color: #8c8c8c;
+}
+
+.recent-posts-article {
+    position: relative;
+    margin: 15px;
+    flex-basis: 370px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.recent-posts-article:hover .recent-posts-article-img {
+    filter: brightness(50%);
+}
+
+.recent-posts-article-img {
+    flex-basis: 100%;
+}
+
+.recent-posts-article-box {
+    flex-basis: 100%;
+    padding: 10%;
+    padding-top: 20px;
+}
+
+.recent-posts-article:hover .recent-posts-article-box {
+    background-color: #362f2d;
+}
+
+.recent-posts-article-box-title {
+    font-size: 20px;
+    line-height: 40px;
+    color: #555555;
+}
+
+.recent-posts-article:hover .recent-posts-article-box-title {
+    color: #c7b299;
+}
+
+.recent-posts-article-box-text {
+    font-size: 14px;
+    line-height: 22px;
+    color: #8c8c8c;
+}
+
+.recent-posts-article:hover .recent-posts-article-box-text {
+    color: #ffffff;
+}
+
+.recent-posts-article-box-link {
+    padding: 5px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #c7b299;
+    position: relative;
+    border-radius: 4px 0 0 4px;
+}
+
+.recent-posts-article-box-link:after {
+    position: absolute;
+    padding-left: 10px;
+    content: "";
+    width: 5px;
+    height: 100%;
+    background: url(../img/rp-icon-arrow.svg) no-repeat center, transparent top;
+    border-radius: 0 4px 4px 0;
+    top: 0;
+    right: -15px;
+}
+
+.recent-posts-article-box-link:hover {
+    width: 200px;
+    color: grey;
+    background-color: bisque;
+}
+
+.recent-posts-article-box-link:active {
+    color: bisque;
+    background-color: sandybrown;
+}
+
+.recent-posts-article-box-link:hover:after {
+    background: url(../img/rp-icon-arrow-grey.svg) no-repeat center;
+    background-color: bisque;
+}
+
+
+.recent-posts-article-box-link:active:after {
+    background: url(../img/rp-icon-arrow-bisque.svg) no-repeat center;
+    background-color: sandybrown;
+}
+
+.recent-posts-article-calendar {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    top: 20px;
+    left: 20px;
+}
+
+.recent-posts-article-calendar-days {
+    font-size: 24px;
+    line-height: 35px;
+    color: #ffffff;
+    width: 50px;
+    height: 35px;
+    background-color: #363636;
+    border-radius: 3.0px 3.0px 0.0px 0.0px;
+}
+
+.recent-posts-article:hover .recent-posts-article-calendar-days {
+    background-color: #c7b299;
+}
+
+.recent-posts-article-calendar-month {
+    font-size: 12px;
+    line-height: 25px;
+    color: #ffffff;
+    width: 50px;
+    height: 25px;
+    background-color: #252525;
+    border-radius: 0.0px 0.0px 3.0px 3.0px;
+}
+
+.recent-posts-article:hover .recent-posts-article-calendar-month {
+    background-color: #a48d72;
+}
+
+.recent-posts-nav-button-left,
+.recent-posts-nav-button-right {
+    flex-basis: 25px;
+    height: 25px;
+    margin: 0 4px;
+    border: none;
+}
+
+.recent-posts-nav-button-left {
+    margin-left: $width/2-50px;
+}
+
+.recent-posts-nav-button-right {
+    margin-right: $width/2-50px;
+}
+
+.recent-posts-nav-button-left {
+    background: url(../img/rp-left.svg) no-repeat right;
+}
+
+.recent-posts-nav-button-right {
+    background: url(../img/rp-right.svg) no-repeat left;
+}
+
+.recent-posts-nav-button-left:hover {
+    background: url(../img/rp-left-checked.svg) no-repeat right;
+}
+
+.recent-posts-nav-button-right:hover {
+    background: url(../img/rp-right-checked.svg) no-repeat left;
+}

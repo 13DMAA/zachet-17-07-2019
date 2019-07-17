@@ -1,0 +1,43 @@
+.first-aside {
+    position: relative;
+    background: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
+    min-height: 150px;
+    padding: 0 20%;
+}
+
+.first-aside-title {
+    font-size: 28px;
+    color: white;
+    padding-top: 40px;
+}
+
+.first-aside-title:before {
+    content: 'Waxom';
+    color: #c7b299;
+}
+
+.first-aside-text {
+    font-size: 18px;
+    margin: 0;
+    color: #615855;
+}
+
+.first-aside-link {
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translate(0, -50%);
+    width: 170px;
+    padding: 0 5px;
+    background-color: #998675;
+    border-radius: 3.0px;
+    border: 3px solid #998675;
+    box-sizing: border-box;
+}
+
+.first-aside-link-text {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 50px;
+}
